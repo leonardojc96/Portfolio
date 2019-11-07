@@ -34,7 +34,7 @@ body{
 }
 
 @media (max-width: 992px){
-    .inner-home{
+    #inner-home{
         padding-top: 30vh;
     }
 }
