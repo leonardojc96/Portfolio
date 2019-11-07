@@ -1,0 +1,52 @@
+body{
+    background: #333;
+    color: #fff;
+}
+
+#logo-img{
+    height: 50px;
+    width: 150px;
+}
+.navbar {
+    border-bottom: #168c8c 3px solid;
+    opacity: .9;
+}
+
+#home-section{
+    background: url('../img/fondo.jpg') no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.dark-overlay{
+    background-color: rgba(0, 0, 0, .6);
+    position: inherit;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-width: 100%;
+}
+
+#inner-home{
+    padding-top: 40vh;
+    min-height: 100vh;
+}
+
+@media (max-width: 992px){
+    .inner-home{
+        padding-top: 40vh;
+    }
+}
+
+.text1{
+    color: ivory;
+}
+
+#titulo{
+    font-family: 'Bevan';    
+}
+
+#api{
+    width: 90px;
+}
