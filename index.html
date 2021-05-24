@@ -7,6 +7,8 @@
     <link rel="icon" href="img/favicon.bmp">
     <title>Leonardo Cardozo</title>
 
+    <link rel="stylesheet" href="css/set2.css">
+
     <!-- Bootstrap 4 CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Font Awesome -->
@@ -50,14 +52,14 @@
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <h3 class="display-3 text-center text1" id="titulo">Leonardo Cardozo</h3>
+                        <h1 class="display-3 text-center text1" id="titulo">Leonardo Cardozo</h1>
                         <h3 class="display-3 text-center text1" id="titulo">Web developer</h3>
                     </div>
                     <div class="carousel-item">
-                        <h3 class="display-3 text-center text1" id="titulo">Responsive design</h1>
+                        <h3 class="display-3 text-center text1" id="titulo">Responsive design</h3>
                     </div>
                     <div class="carousel-item">
-                        <h3 class="display-3 text-center text1" id="titulo">Frontend and Backend</h1>                        
+                        <h3 class="display-3 text-center text1" id="titulo">Frontend and Backend</h3>                        
                     </div>
                 </div>
 
@@ -73,56 +75,141 @@
         </header>
 
 
-        <section id="services-section" class="bg-light text-center" >
-            <div class="container  text-dark">
+        <section id="services-section" class="bg-secondary text-center" >
+            <div class="container  text-white">
             <div class="row ">
-                <div class="col-md-12 pt-5 ">
+                <div class="col-md-12 pt-5">
                     <h3 class="display-4" id="titulo">Services</h3>
                 </div>
-                <div class="col-md-3 py-5">
-                    <i class="fas fa-laptop-code fa-5x"></i>
-                    <h3 class="py-4" id="titulo">Diseño web a medida</h3>
-                    <p>Responsive design, que se adapta a todas las plataformas, con las ultimas tecnologias en el diseño web, HTML5, CSS3 y frameworks como Bootstrap 4 y Materialize.</p>
-                </div>
-                <div class="col-md-3 py-5 ">
-                    <i class="fab fa-react fa-5x" id="icono"></i>
-                    <h3 class="py-4" id="titulo">React</h3>
-                    <p>React como framework frontend, implementado con MongoDb, 
-                        NodeJs y Express, stack MERN.
-                    </p>
-                </div>
-                <div class="col-md-3 py-5">
-                    <i class="fab fa-windows fa-5x"></i>
-                    <h3 class="py-4" id="titulo">Windows Stack</h3>
-                    <p>
-                        El stack de Windows, como alternativa a MERN, con las tecnologias 
-                        de SQL Server y .NET Core MVC.
-                    </p>
-                </div>
-                <div class="col-md-3 py-5">
-                    <img src="img/api.png" class="" id="api">
-                    <h3 class="py-4" id="titulo">API Rest</h3>
-                    <p>
-                        Creacion y mantenimiento de API Rest.
-                    </p>
-                </div>
+                <div class="caption-style-3">
+
+                <figure class="effect-lexi text-dark">
+                    <img src="./img/Wavy_Responsive.jpg" alt="Responsive design">
+                    <figcaption>
+                        <h2 class="py-4 text-white" id="titulo"><span>Diseño  web</span>  a  medida</h2>
+                        <p class="text-white">Responsive design con HTML5, CSS3 y frameworks como Bootstrap 4 y Materialize.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="effect-lexi ">
+                    <img src="./img/Wavy_React.jpg" alt="React">
+                    <figcaption>
+                        <h2 class="py-4 text-white" id="titulo"><span>React</span></h2>
+                        <p class="text-white">React como framework frontend, implementado con MongoDb, 
+                                NodeJs y Express, stack MERN.
+                        </p>
+                    </figcaption>
+                </figure>
+
+                <figure class="effect-lexi ">
+                    <img src="./img/Wavy-back.jpg" alt="Back end">
+                    <figcaption>
+                        <h2 class="py-4 text-white" id="titulo">Implementacion <span> back-end</span></h2>
+                        <p class="text-white">Back-end con tecnologia Java (Spring, Hibernate, Sql server, Mysql)
+                        </p>
+                    </figcaption>
+                </figure>
+
+                <figure class="effect-lexi ">
+                    <img src="./img/Wavy-api.jpg" alt="Api">
+                    <figcaption>
+                        <h2 class="py-4 text-white" id="titulo">Web <span> services</span></h2>
+                        <p class="text-white">Consumo e Implementacion de web services
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+
             </div>
         </div>
         </section>
 
 
-        <section id="projects-section" class="bg-info text-center">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-12 pt-5"><h3 class="display-4 ">Projects</h3></div>
-                    <div class="col-md-3 py-5"><h3>1</h3></div>
-                    <div class="col-md-3 py-5"><h3>2</h3></div>
-                    <div class="col-md-3 py-5"><h3>3</h3></div>
-                    <div class="col-md-3 py-5"><h3>4</h3></div>
+        <section id="projects-section" class="bg-info text-center pt-5">
+            <div class="container-fluid project-container ">
+                <div class="row justify-content-around">
+                    <div class="caption-style-3">
+                        <div class="col-12">
+                            <h3 class="display-4 ">Projects</h3>
+                        </div>
+
+                        <figure class="effect-julia" id="weather">
+                            <img src="./img/weather-app-screenshot.png" alt="img21">
+                            <figcaption>
+                                <div class="blur">
+                                    <h2><span>Weather App</span></h2>
+                                </div>
+                                <div>
+                                    <p>Aplicacion del clima.</p>
+                                    <p>Desarrollada en React Js.</p>
+                                    <p>Responsive design.</p>
+                                </div>
+                                <a target="_bank" href="https://leonardojc96.github.io/Weather-app/" >Go to project</a>
+                            </figcaption>			
+                        </figure>
+
+                        <figure class="effect-julia" id="gara">
+                            <img src="./img/gara-screenshot.png" alt="Gara-servicios">
+                            <figcaption>
+                                <div class="blur">
+                                    <h2><span>Gara Servicios</span></h2>
+                                </div>
+                                <div>
+                                    <p>Servicio para aplicacion de garantias.</p>
+                                    <p>Desarrollada en Vue, Java, Spring, Hibernate, MySql.</p>
+                                    <p>Api Rest, Swagger.</p>
+                                </div>
+                                <a target="_bank" href="https://leonardojc96.github.io/Weather-app/" >Go to project</a>
+                            </figcaption>			
+                        </figure>
+
+                        <figure class="effect-julia" id="consultorio">
+                            <img src="./img/consultorio-medico-screenshot.png" alt="Gara-servicios">
+                            <figcaption>
+                                <div class="blur">
+                                    <h2><span>Consultorio Medico</span></h2>
+                                </div>
+                                <div>
+                                    <p>Consultoria médica.</p>
+                                    <p>Aplicación de escritorio.</p>
+                                    <p>Desarrollada en .Net, C#, Sql Server.</p>
+                                </div>
+                                <a target="_bank" href="https://github.com/leonardojc96/Proyecto-Consultorio-Medico" >Go to project</a>
+                            </figcaption>			
+                        </figure>
+
+                        <figure class="effect-julia" id="gify">
+                            <img src="./img/gify-screenshot.png" alt="Gify-App">
+                            <figcaption>
+                                <div class="blur">
+                                    <h2><span>Gify App</span></h2>
+                                </div>
+                                <div>
+                                    <p>Busca tus gifs favoritos.</p>
+                                    <p>Aplicacion web, se adapta a cualquier dispositivo.</p>
+                                    <p>Desarrollada con ReactJs.</p>
+                                </div>
+                                <a target="_bank" href="https://github.com/leonardojc96/Proyecto-Consultorio-Medico" >Go to project</a>
+                            </figcaption>			
+                        </figure>
+
+                        <figure class="effect-julia" id="project-animation">
+                            <figcaption>
+                                <div class="blur">
+                                    <h2><span>Gify App</span></h2>
+                                </div>
+                                <div>
+                                    <p>Busca tus gifs favoritos.</p>
+                                    <p>Aplicacion web, se adapta a cualquier dispositivo.</p>
+                                    <p>Desarrollada con ReactJs.</p>
+                                </div>
+                                <a target="_bank" href="https://github.com/leonardojc96/Proyecto-Consultorio-Medico" >Go to project</a>
+                            </figcaption>			
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
-
 
         <section id="contact-section" class="text-center bg-secondary">
             <div class="container">
@@ -148,6 +235,11 @@
                 </div>
             </div>
         </section>
+
+
+        <a class="btn boton-top" id="boton-top" href="#home-section">
+            <li class="fas fa-arrow-circle-up "></li>
+        </a>
 
 
         <footer class="p-4 text-muted text-center">
