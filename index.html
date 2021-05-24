@@ -6,19 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="img/favicon.bmp">
     <title>Leonardo Cardozo</title>
-
-    <link rel="stylesheet" href="css/set2.css">
-
+    
     <!-- Bootstrap 4 CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" integrity="sha384-b3ua1l97aVGAPEIe48b4TC60WUQbQaGi2jqAWM90y0OZXZeyaTCWtBTKtjW2GXG1" crossorigin="anonymous"></script>
     <!-- custom css -->
+    <link rel="stylesheet" href="css/set2.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- Navigation -->
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="navbar">
             <div class="container">
                 <a href="index.html" class="navbar-brand">
                     <img src="img/logo.png" id="logo-img" alt="Leonardo Cardozo">
@@ -46,36 +45,27 @@
         </nav>
 
         <header id="home-section">
-            <div class="dark-overlay">
-                <div id="inner-home">
-                <div class="carousel slide" id="demoo" data-ride="carousel"> 
-
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <h1 class="display-3 text-center text1" id="titulo">Leonardo Cardozo</h1>
-                        <h3 class="display-3 text-center text1" id="titulo">Web developer</h3>
+            <div class="container" id="">
+                <div class="row mt-4 ">
+                    <div class="col-6 mt-4" id="text-header">
+                        <h1 class="display-3 text1" id="titulo">Leonardo Cardozo</h1>
+                        <h2 class="display-4 text1" id="titulo">Web developer</h2>
+                        <p class="display-5 text1">Responsive design</p>
+                        <p class="display-6 text1">Frontend and Backend</p>    
+                        <a class="btn btn-outline-light" href="#services-section" tag="button">
+                            hechar un vistaso 
+                            <i class="fas fa-chevron-down"></i>
+                        </a>                    
                     </div>
-                    <div class="carousel-item">
-                        <h3 class="display-3 text-center text1" id="titulo">Responsive design</h3>
-                    </div>
-                    <div class="carousel-item">
-                        <h3 class="display-3 text-center text1" id="titulo">Frontend and Backend</h3>                        
-                    </div>
-                </div>
-
-
-                    <!-- CONTROLES DE LA IZQUIERDA Y DERECHA -->
-                    <div class="controles">
-                        <a href="#demoo" class="carousel-control-prev" data-slide="prev"> <span class="carousel-control-prev-icon"></span></a>
-                        <a href="#demoo" class="carousel-control-next" data-slide="next"> <span class="carousel-control-next-icon"></span></a>
-                    </div>
+                    
+                    <img class="col-6" id="img-header" src="./img/undraw_programming_2svr.svg" alt="">
                 </div>
             </div>
-            </div>
+
         </header>
 
 
-        <section id="services-section" class="bg-secondary text-center" >
+        <section id="services-section" class=" text-center" >
             <div class="container  text-white">
             <div class="row ">
                 <div class="col-md-12 pt-5">
@@ -125,12 +115,12 @@
         </section>
 
 
-        <section id="projects-section" class="bg-info text-center pt-5">
+        <section id="projects-section" class=" text-center pt-5">
             <div class="container-fluid project-container ">
                 <div class="row justify-content-around">
                     <div class="caption-style-3">
                         <div class="col-12">
-                            <h3 class="display-4 ">Projects</h3>
+                            <h3 class="display-4" id="titulo">Projects</h3>
                         </div>
 
                         <figure class="effect-julia" id="weather">
@@ -211,10 +201,10 @@
             </div>
         </section>
 
-        <section id="contact-section" class="text-center bg-secondary">
+        <section id="contact-section" class="text-center ">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 pt-5"><h3 class="display-4">Contact</h3></div>
+                    <div class="col-md-12 pt-5"><h3 class="display-4" id="titulo">Contact</h3></div>
                     <div class="col-md-7 my-5 border rounded">
                         <h3 class="my-4">Send me a message</h3>
                         <form class="form-group" id="formulario" action="mailto:leonardojc96@gmail.com" method="POST" enctype="text/plain">
@@ -242,7 +232,7 @@
         </a>
 
 
-        <footer class="p-4 text-muted text-center">
+        <footer class="p-4 text-muted text-center bg-dark">
             <i><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2019 - Leonardo Cardozo</i><br/>
             <address>San Miguel de Tucumán, Tucumán, AR </address>
         </footer>

@@ -1,5 +1,6 @@
 body{
-    background: #333;
+    background: rgb(194,192,222);
+    background: linear-gradient(90deg, rgba(194,192,222,1) 0%, rgba(153,140,212,1) 26%, rgba(132,127,213,1) 100%);
     color: #fff;
 }
 
@@ -17,9 +18,13 @@ html{
 }
 
 #home-section{
-    background: url('../img/fondo.jpg') no-repeat;
+    /* background: #6C63FF; */
+    
     background-size: cover;
     background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 section{
@@ -52,6 +57,26 @@ section{
     #inner-home{
         padding-top: 30vh;
     }
+}
+
+#img-header{
+    transform-style: preserve-3d;
+    transition-duration: 3s;
+}
+
+#img-header:hover{
+    transform: translatex(5%) rotateX(20deg) rotateZ(0deg) rotateY(0deg);
+    transition-duration: 3s;
+}
+
+#text-header{
+    transform-style: preserve-3d;
+    transition-duration: 5s;
+}
+
+#text-header:hover{
+    transform: translatex(-5%) rotateX(-20deg) rotateZ(-2deg);
+    transition-duration: 5s;
 }
 
 .text1{
