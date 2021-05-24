@@ -3,20 +3,35 @@ body{
     color: #fff;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #logo-img{
-    height: 50px;
-    width: 150px;
+    width: 130px;
 }
 .navbar {
     border-bottom: #168c8c 3px solid;
     opacity: .9;
+    padding: 0px;
 }
 
 #home-section{
     background: url('../img/fondo.jpg') no-repeat;
-    min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+   align-items: center;
+}
+
+.img-card{
+    background: rgb(195, 211, 206);
+    color: black;
+    padding: 0;
 }
 
 .dark-overlay{
@@ -49,4 +64,47 @@ body{
 
 #api{
     width: 90px;
+}
+
+textarea{
+    resize: none;
+}
+
+figure {
+    border-radius: 0.5rem;
+}
+
+.blur {
+    backdrop-filter: blur(10px);
+    margin-bottom: 1rem;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+    text-shadow: 1px 1px 2px black;
+}
+
+figure img{
+    margin: auto;
+}
+
+.boton-top{
+    cursor: pointer;
+    position: fixed;
+    background: black;
+    color: white;
+    background-repeat:no-repeat;
+    border-radius: 50% 50%;
+    bottom: 50px;
+    right: 50px;
+    z-index: 10;
+}
+
+@keyframes mover{
+    0%{
+        transform: translate(200%);
+    }
+}
+
+@keyframes mover1{
+    0%{
+        transform: translate(-200%);
+    }
 }
