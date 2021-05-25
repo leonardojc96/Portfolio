@@ -15,7 +15,6 @@
 	overflow: hidden;
 	margin: 10px 1%;
 	min-width: 320px;
-	max-width: 480px;
 	max-height: 360px;
 	width: 48%;
 	height: auto;
@@ -67,11 +66,11 @@
 
 .caption-style-3 figure h2 {
 	word-spacing: -0.15em;
-	font-weight: 300;
+	/* font-weight: 300; */
 }
 
 .caption-style-3 figure h2 span {
-	font-weight: 800;
+	/* font-weight: 800; */
 }
 
 .caption-style-3 figure h2,
@@ -235,7 +234,7 @@ figure.effect-hera h2 {
 	font-size: 158.75%;
 }
 
-figure.effect-hera h2,
+/* figure.effect-hera h2,
 figure.effect-hera p {
 	position: absolute;
 	top: 50%;
@@ -246,7 +245,7 @@ figure.effect-hera p {
 	transform: translate3d(-50%,-50%,0);
 	-webkit-transform-origin: 50%;
 	transform-origin: 50%;
-}
+} */
 
 figure.effect-hera figcaption::before {
 	position: absolute;
@@ -313,11 +312,11 @@ figure.effect-hera:hover figcaption::before {
 	transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-45deg) scale3d(1,1,1);
 }
 
-figure.effect-hera:hover h2 {
+/* figure.effect-hera:hover h2 {
 	opacity: 0;
 	-webkit-transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
 	transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
-}
+} */
 
 figure.effect-hera:hover p i:empty {
 	-webkit-transform: translate3d(0,0,0);
@@ -358,12 +357,12 @@ figure.effect-winston figcaption::before {
 	transform-origin: 0 100%;
 }
 
-figure.effect-winston h2 {
+/* figure.effect-winston h2 {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,20px,0);
 	transform: translate3d(0,20px,0);
-}
+} */
 
 figure.effect-winston p {
 	position: absolute;
@@ -542,6 +541,12 @@ figure.effect-terry h2 {
 	figure.effect-terry h2 {
 		padding: 0.75em 10px;
 		font-size: 120%;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.caption-style-3 figure {
+		max-width: 320px;
 	}
 }
 

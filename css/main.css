@@ -1,7 +1,7 @@
 body{
-    background: rgb(194,192,222);
-    background: linear-gradient(90deg, rgba(194,192,222,1) 0%, rgba(153,140,212,1) 26%, rgba(132,127,213,1) 100%);
-    color: #fff;
+    /* background: rgb(194,192,222);
+    background: linear-gradient(90deg, rgba(194,192,222,1) 0%, rgba(153,140,212,1) 26%, rgba(132,127,213,1) 100%); */
+    background: rgb(233, 233, 233);
 }
 
 html{
@@ -12,14 +12,12 @@ html{
     width: 130px;
 }
 .navbar {
-    border-bottom: #168c8c 3px solid;
+    border-bottom: #6C63FF 3px solid;
     opacity: .9;
     padding: 0px;
 }
 
 #home-section{
-    /* background: #6C63FF; */
-    
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
@@ -30,7 +28,8 @@ html{
 section{
     min-height: 100vh;
     display: flex;
-   align-items: center;
+    align-items: center;
+    padding-top: 65px;
 }
 
 .img-card{
@@ -75,16 +74,18 @@ section{
 }
 
 #text-header:hover{
-    transform: translatex(-5%) rotateX(-20deg) rotateZ(-2deg);
+    transform: translatex(-5%) rotateX(-20deg) rotateZ(-0deg);
     transition-duration: 5s;
 }
 
 .text1{
-    color: ivory;
+    /* color: ivory; */
+    color: #6C63FF;
 }
 
 #titulo{
-    font-family: 'Bevan';    
+    /* font-family: 'Bevan';    */
+    color: #6C63FF; 
 }
 
 #api{
@@ -101,6 +102,8 @@ figure {
 
 .blur {
     backdrop-filter: blur(10px);
+    /* background: #7b4fad;
+    opacity: 0.8; */
     margin-bottom: 1rem;
     box-shadow: 3px 3px 10px rgba(0,0,0,0.6);
     text-shadow: 1px 1px 2px black;
@@ -113,7 +116,7 @@ figure img{
 .boton-top{
     cursor: pointer;
     position: fixed;
-    background: black;
+    background: #6C63FF;
     color: white;
     background-repeat:no-repeat;
     border-radius: 50% 50%;
@@ -122,14 +125,59 @@ figure img{
     z-index: 10;
 }
 
-@keyframes mover{
-    0%{
-        transform: translate(200%);
-    }
-}
-
-@keyframes mover1{
-    0%{
-        transform: translate(-200%);
-    }
-}
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
