@@ -38,15 +38,6 @@ section{
     padding: 0;
 }
 
-.dark-overlay{
-    background-color: rgba(0, 0, 0, .6);
-    position: inherit;
-    left: 0;
-    top: 0;
-    width: 100%;
-    min-width: 100%;
-}
-
 #inner-home{
     padding-top: 40vh;
     min-height: 100vh;
@@ -55,6 +46,12 @@ section{
 @media (max-width: 992px){
     #inner-home{
         padding-top: 30vh;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .navbar{
+        max-width: 360px;
     }
 }
 
